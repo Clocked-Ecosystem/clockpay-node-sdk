@@ -12,7 +12,10 @@ export class CurrencyService {
       return response.data;
     } catch (error) {
       console.error('Error in ModuleA:getData', error);
-      throw error;
+      const errorMessage =
+        error?.response?.data?.message ||
+        'An unexpected error occurred, please contact administrator';
+      throw new Error(errorMessage);
     }
   }
 
@@ -24,7 +27,10 @@ export class CurrencyService {
       return response.data;
     } catch (error) {
       console.error('Error in ModuleA:getData', error);
-      throw error;
+      const errorMessage =
+        error?.response?.data?.message ||
+        'An unexpected error occurred, please contact administrator';
+      throw new Error(errorMessage);
     }
   }
 }

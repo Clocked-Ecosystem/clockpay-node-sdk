@@ -18,7 +18,7 @@ export class ClockPay {
     this.http = this.httpService.axiosRef;
     // Create an Axios instance
     // Configure the AxiosInstance with custom defaults
-    this.http.defaults.baseURL = 'https://api.theclockchain.io/api/v1';
+    this.http.defaults.baseURL = this.baseUrl;
     this.http.defaults.headers.common['clock-api-key'] = this.key;
     this.http.defaults.headers.common['Content-Type'] = 'application/json';
 
