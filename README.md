@@ -30,7 +30,6 @@ const clockpay = new ClockPay(
 ```
 const link = await clockpay.link.create({
   amount: 10000,
-  businessId: 'e7417223-1384-4de7-af01-f40960f38aba',
   networkId: '2084c02a-a972-40d4-806d-7c9fab3aa0eb',
   coinId: 'ecac2fbe-f73a-4d1e-918c-58385d4fa531',
   currency: 'ngn',
@@ -38,8 +37,8 @@ const link = await clockpay.link.create({
   meta: {
     title: 'Simple',
     customerId: 'string',
-    email: 'string@gm.com',
-    fullName: 'Sampler',
+    email: 'sample@gmail.com',
+    fullName: 'Musa Chinedu',
   },
 });
 console.log(link);
