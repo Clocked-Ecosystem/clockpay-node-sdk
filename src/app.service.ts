@@ -6,7 +6,7 @@ import { LinkService } from './payment/link.service';
 
 @Injectable()
 export class ClockPay {
-  private readonly baseUrl = 'http://localhost:3245/api/v1';
+  private readonly baseUrl = 'https://api.dev.theclockchain.io/api/v1';
   public readonly currency: CurrencyService;
   public readonly link: LinkService;
   private http: AxiosInstance;
@@ -18,7 +18,7 @@ export class ClockPay {
     this.http = this.httpService.axiosRef;
     // Create an Axios instance
     // Configure the AxiosInstance with custom defaults
-    this.http.defaults.baseURL = 'http://localhost:3245/api/v1';
+    this.http.defaults.baseURL = 'https://api.dev.theclockchain.io/api/v1';
     this.http.defaults.headers.common['clock-api-key'] = this.key;
     this.http.defaults.headers.common['Content-Type'] = 'application/json';
 
