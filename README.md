@@ -1,4 +1,4 @@
-## ClockPay API SDK
+# `ClockPay API SDK`
 ClockPay API SDK is a simple Node.js SDK to integrate with ClockPay services. It helps you interact with ClockPay's payment links, currencies, and more.
 
 ## Installation
@@ -20,14 +20,14 @@ import { ClockPay } from 'clockpay';
 ```
 
 ## Initialize 
-```
+```js
 const clockpay = new ClockPay(
   'cpay_live_sk_.....'
 );
 ```
 
 ## Example
-```
+```js
 const link = await clockpay.link.create({
   amount: 10000,
   networkId: '2084c02a-a972-40d4-806d-7c9fab3aa0eb',
@@ -49,7 +49,7 @@ Currency Methods
 
 getCurrencies
 Description: Retrieves a list of available currencies.
-```
+```js
 Example:
 const currencies = await clockpay.currency.getCurrencies();
 console.log(currencies);
@@ -60,7 +60,7 @@ getCurrencyNetwork
 Description: Fetches information for a specific currency by its ID.
 Parameters:
 currencyId (string) - The ID of the currency.
-```
+```js
 const currencyNetwork = await clockpay.currency.getCurrencyNetwork('----');
 console.log(currencyNetwork);
 ```
