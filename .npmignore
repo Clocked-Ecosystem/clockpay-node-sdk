@@ -1,1 +1,13 @@
 node_modules/
+src/
+nest-cli.json
+.prettierrc
+tsconfig.build.json
+tsconfig.json
+.eslintrc.js
+dist/test/
+dist/*.test.js
+*.log
+*.ts
+*.map
+.env
