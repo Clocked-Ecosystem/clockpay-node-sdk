@@ -16,7 +16,7 @@ export interface Response {
 }
 
 export class PhoneNumberSchema {
-  code: string;
-  number: string;
-  local: string;
+  code: string | undefined;
+  number: string | undefined;
+  local: string | undefined;
 }
