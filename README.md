@@ -51,8 +51,16 @@ getCurrencies
 Description: Retrieves a list of available currencies.
 ```js
 Example:
+try {
 const currencies = await clockpay.currency.getCurrencies();
 console.log(currencies);
+}
+catch (error) {
+    console.error('Error message:', error.message);
+    if (error.data) {
+      console.error('Error details:', error.data);
+    }
+}
 ```
 
 getCurrencyNetwork
@@ -61,8 +69,16 @@ Description: Fetches information for a specific currency by its ID.
 Parameters:
 currencyId (string) - The ID of the currency.
 ```js
+try {
 const currencyNetwork = await clockpay.currency.getCurrencyNetwork('----');
 console.log(currencyNetwork);
+}
+catch (error) {
+    console.error('Error message:', error.message);
+    if (error.data) {
+      console.error('Error details:', error.data);
+    }
+}
 ```
 
 Link Methods
