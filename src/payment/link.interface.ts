@@ -30,5 +30,6 @@ export interface CreateLinkResponse extends Response {
   data: {
     link: string;
     reference: string;
+    clientSecret: string;
   };
 }
