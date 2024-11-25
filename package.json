@@ -7,6 +7,11 @@
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clocked-Ecosystem/clockpay-node-sdk.git"
+  },
+  "homepage": "https://www.theclockchain.io/",
   "scripts": {
     "release": "npm publish",
     "build": "nest build",
