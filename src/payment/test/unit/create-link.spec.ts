@@ -1,12 +1,9 @@
 import { AxiosInstance, AxiosResponse } from 'axios';
-import { ClockPayError, ErrorCode } from '../../../../src/errors';
-import { ApiResponse } from '../../../../src/errors/response';
-import {
-  CreateLinkDto,
-  CreateLinkResponse,
-} from '../../../../src/payment/link.interface';
-import { LinkService } from '../../../../src/payment/link.service';
-import { InputValidator } from '../../../../src/validators';
+import { ClockPayError, ErrorCode } from 'src/errors';
+import { ApiResponse } from 'src/errors/response';
+import { CreateLinkDto, CreateLinkResponse } from 'src/payment/link.interface';
+import { LinkService } from 'src/payment/link.service';
+import { InputValidator } from 'src/validators';
 
 jest.mock('../../../validators');
 
